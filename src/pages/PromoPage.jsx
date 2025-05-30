@@ -16,7 +16,7 @@ function PromoPage() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('https://YOUR-BACKEND-URL/promo/create',
+      await axios.post('https://promo-backend-y45t.onrender.com/promo/create',
         { code, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );

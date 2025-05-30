@@ -10,7 +10,7 @@ function LoginPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://YOUR-BACKEND-URL/login', { login, password });
+      const res = await axios.post('https://promo-backend-y45t.onrender.com/login', { login, password });
       localStorage.setItem('token', res.data.token);
       navigate('/promo');
     } catch (error) {

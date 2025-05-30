@@ -31,7 +31,7 @@ function RegisterPage() {
     }
 
     try {
-      await axios.post('https://YOUR-BACKEND-URL/register', formData);
+      await axios.post('https://promo-backend-y45t.onrender.com/register', formData);
       alert('Регистрация прошла успешно');
       navigate('/');
     } catch (error) {
